@@ -7,7 +7,6 @@ import java.util.Calendar;
 import java.util.Date;
 
 public class AlarmClockApp extends JFrame {
-    // Khai báo các thành phần giao diện (tương đương DOM trong JS)
     private JLabel currentTimeLabel;
     private JComboBox<String> hourSelect;
     private JComboBox<String> minuteSelect;
@@ -15,13 +14,10 @@ public class AlarmClockApp extends JFrame {
     private JButton setAlarmBtn;
     private JButton clearAlarmBtn;
     private JLabel alarmStatus;
-
-    // Các biến logic
     private String alarmTime = null;
     private boolean isAlarmPlaying = false;
 
     public AlarmClockApp() {
-        // Thiết lập giao diện chính (Window)
         setTitle("Ứng dụng Báo Thức");
         setSize(400, 250);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
